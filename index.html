@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__logo">
+                <img src="./src/assets/svg/LOGO.svg" alt="">
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav__list">
+                    <li class="header__nav__list__item"><img src="./src/assets/svg/person.svg" alt=""></li>
+                    <li class="header__nav__list__item"><img src="./src/assets/svg/favorite.svg" alt=""></li>
+                    <li class="header__nav__list__item"><img src="./src/assets/svg/bag.svg" alt=""></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-wrapper">
+            <div class="main__slider">
+                <div class="main__slider__images">
+                    <img class="main__slider__image main__slider__image--active" src="./src/assets/images/first-slide.png" alt="" srcset="">
+                    <img class="main__slider__image" src="./src/assets/images/second-slide.png" alt="" srcset="">
+                    <img class="main__slider__image" src="./src/assets/images/third-slide.png" alt="" srcset="">
+                    <img class="main__slider__image" src="./src/assets/images/fourth-slide.png" alt="" srcset="">
+                    <img class="main__slider__image" src="./src/assets/images/fifth-slide.png" alt="" srcset="">
+                </div>
+                <div class="main__slider__dots">
+                    <div class="main__slider__dot main__slider__dot--active"><img src="./src/assets/images/first-slide.png" alt="" srcset=""></div>
+                    <div class="main__slider__dot"><img src="./src/assets/images/second-slide.png" alt="" srcset=""></div>
+                    <div class="main__slider__dot"><img src="./src/assets/images/third-slide.png" alt="" srcset=""></div>
+                    <div class="main__slider__dot"><img src="./src/assets/images/fourth-slide.png" alt="" srcset=""></div>
+                    <div class="main__slider__dot"><img src="./src/assets/images/fifth-slide.png" alt="" srcset=""></div>
+                </div>
+            </div>
+            <div class="main__info">
+                <div class="main__info__title-and-reviews">
+                    <h2>Пижама для девочек</h2>
+                    <p class="main__info__item-id">Арт. 02765/46</p>
+                    <div class="main__info__reviews">
+                        <p>Отзывы</p>
+                        <img class="main__info__rating" src="./src/assets/svg/row.svg" alt="">
+                        <p class="main__info__review-quantity">14 отзывов</p>
+                        <img class="main__info__arrow" src="./src/assets/svg/Frame.svg" alt="">
+                    </div>
+                </div>
+                
+                <div class="main__info__price">
+                    <p class="main__info__price__actual-price">800 ₽</p>
+                    <p class="main__info__price__prev-price">1 500 ₽</p>
+                    <img class="main__info__price__arrow" src="./src/assets/svg/Frame.svg" alt="">
+                </div>
+
+                <div class="main__info__sales">
+                    <p class="main__info__price__sail">скидка -47%</p>
+                    <p class="main__info__price__sail">акция -20%</p>
+                </div>
+                
+                <div class="main__info__size">
+                    <select class="main__info__size__select" name="size" id="size">
+                        <option value="Выбрать размер">Выбрать размер</option>
+                    </select>
+                    <p class="main__info__size__select__label"><label for="size">Определить размер</label></p>
+                </div>
+
+                <div class="main__info__items-amount">
+                    <div class="main__info__items-amount__wrapper">
+                        <span class="main__info__items-amount__button main__info__items-amount__increase">+</span>
+                        <span class="main__info__items-amount__button main__info__items-amount__number">0</span>
+                        <span class="main__info__items-amount__button main__info__items-amount__decrease">-</span>
+                    </div>
+                    <button class="main__info__items-amount__add-to-cart">Добавить в корзину</button>
+                    <button class="main__info__items-amount__add-to-favorite"><img src="./src/assets/svg/favorite-white.svg" alt=""></button>
+                </div>
+                <p class="main__info__pop-up-button">Купить в 1 клик</p>
+                <div class="main__info__pop-up-background">
+                    <form class="main__info__pop-up">
+                        <img class="main__info__pop-up__close" src="./src/assets/svg/cross.svg" alt="">
+                        <p>Купить в 1 клик</p>
+                        <input class="main__info__pop-up__input" ="text" placeholder="+ 7 (---) --- -- --">
+                        <input class="main__info__pop-up__input" type="text" placeholder="Ваше имя">
+                        <hr>
+                        <p class="main__info__pop-up__terms">Нажимая кнопку “Отправить”, я даю согласие на обработку моих персональных данных в соответствии с <br>
+                            <span class="main__info__pop-up__terms-rules">Условиями конфиденциальности</span></p>
+                        <button class="main__info__pop-up__submit">Отправить</button>
+                    </form>
+                </div>
+                <hr>
+                <ul class="main__info__extra-info">
+                    <li class="main__info__extra-info__item"><img src="./src/assets/svg/Closes.svg" alt="">Описание товара</li>
+                    <li class="main__info__extra-info__item"><img src="./src/assets/svg/clock.svg" alt="">Доставка и возврат</li>
+                    <li class="main__info__extra-info__item"><img src="./src/assets/svg/pay.svg" alt="">Способы оплаты</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="dist/main.js"></script>
+</body>
+</html>
