@@ -1,0 +1,59 @@
+.footer {
+    margin-top: auto;
+    margin-bottom: 5rem;
+
+    .footer-wrapper {
+        max-width: 1440px;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+
+        .footer__for-buyers {
+            .footer__for-buyers__list {
+                list-style: none;
+                margin-top: 1rem;
+
+                .footer__for-buyers__list__item {
+                    line-height: 1.7rem;
+                }
+            }
+        }
+
+        .footer__about-us {
+            .footer__about-us__list {
+                list-style: none;
+                margin-top: 1rem;
+
+                .footer__about-us__list__item {
+                    line-height: 1.7rem;
+                }
+            }
+        }
+
+        .footer-form__wrapper {
+            .footer-form {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+
+                .footer-form__input {
+                    position: relative;
+                    padding: 1rem;
+                    width: 100%;
+                    border: none;
+                    border-bottom: solid 1px #333;                       
+                }
+
+                .footer-form__submit {
+                    border: solid 1px #333;
+                    background-color: #fff;
+                    padding: 1rem;
+                    max-width:fit-content;
+                    align-self: flex-end;
+                }
+            }
+        }
+    }
+}

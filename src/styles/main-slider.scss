@@ -1,8 +1,5 @@
 
 main {
-    overflow: hidden;
-    margin-top: 9vh;
-
     .main__slider {
         flex: 1;
         max-width: 1120px;
@@ -48,4 +45,22 @@ main {
             } */
         }
     }
+}
+
+@media screen and (max-width: 410px) {
+    .main {
+        .main__slider {
+            .main__slider__dots {
+                transform: scale(.8);
+                max-height: 500px;
+                top: -30px;
+                position: absolute;
+                flex-direction: column;
+                display: flex;
+                justify-content: space-between;
+                left: .5rem;
+            }
+        }
+    }
+   
 }

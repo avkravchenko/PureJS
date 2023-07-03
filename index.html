@@ -19,9 +19,21 @@
                 <ul class="header__nav__list">
                     <li class="header__nav__list__item"><img src="./src/assets/svg/person.svg" alt=""></li>
                     <li class="header__nav__list__item"><img src="./src/assets/svg/favorite.svg" alt=""></li>
-                    <li class="header__nav__list__item"><img src="./src/assets/svg/bag.svg" alt=""></li>
+                    <li class="header__nav__list__item"><img class="header__nav__list__item__bag" src="./src/assets/svg/bag.svg" alt="">
+                        <span class="header__nav__list__item__bag__count"></span>
+                    </li>
+                    <li class="header__nav__list__item"><img class="burger-open" src="./src/assets/svg/24/Group.svg" alt=""></li>
                 </ul>
             </nav>
+            <div class="burger-background">
+                <ul class="burger-menu">
+                    <p class="burger-close"><img src="./src/assets/svg/cross.svg" alt=""></p>
+                    <li class="burger-menu__item">ПОСТЕЛЬНОЕ БЕЛЬЕ</li>
+                    <li class="burger-menu__item">ОДЕЖДА ДЛЯ ДОМА</li>
+                    <li class="burger-menu__item">ОДЕЖДА ДЛЯ УЛИЦЫ</li>
+                    <li class="burger-menu__item">ВЫХОД</li>
+                </ul>
+            </div>
         </div>
     </header>
     <main class="main">
@@ -78,8 +90,10 @@
                         <span class="main__info__items-amount__button main__info__items-amount__number">0</span>
                         <span class="main__info__items-amount__button main__info__items-amount__decrease">-</span>
                     </div>
-                    <button class="main__info__items-amount__add-to-cart">Добавить в корзину</button>
-                    <button class="main__info__items-amount__add-to-favorite"><img src="./src/assets/svg/favorite-white.svg" alt=""></button>
+                    <div class="main__info__items-amount__buttons">
+                        <button class="main__info__items-amount__add-to-cart">Добавить в корзину</button>
+                        <button class="main__info__items-amount__add-to-favorite"><img src="./src/assets/svg/favorite-white.svg" alt=""></button>
+                    </div>
                 </div>
                 <p class="main__info__pop-up-button">Купить в 1 клик</p>
                 <div class="main__info__pop-up-background">
@@ -103,6 +117,33 @@
             </div>
         </div>
     </main>
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="footer__for-buyers">
+                <p>ПОКУПАТЕЛЯМ</p>
+                <ul class="footer__for-buyers__list">
+                    <li class="footer__for-buyers__list__item">Каталог</li>
+                    <li class="footer__for-buyers__list__item">Акции</li>
+                    <li class="footer__for-buyers__list__item">Бренды</li>
+                </ul>
+            </div>
+            <div class="footer__about-us">
+                <p>О НАС</p>
+                <ul class="footer__about-us__list">
+                    <li class="footer__about-us__list__item">О компании</li>
+                    <li class="footer__about-us__list__item">Новости</li>
+                    <li class="footer__about-us__list__item">Команда</li>
+                </ul>
+            </div>
+            <div class="footer-form__wrapper">
+                <form class="footer-form">
+                    <p>УЗНАЙТЕ ПЕРВЫМИ О НОВИНКАХ И АКЦИЯХ</p>
+                    <input class="footer-form__input" type="email" name="email" id="email" placeholder="Адрес электронной почты">
+                    <button class="footer-form__submit" type="submit">Подписаться</button>
+                </form>
+            </div>
+        </div>
+    </footer>
     <script src="dist/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,14 @@
+.header .header__wrapper {
+  height: 3rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px; }
+  .header .header__wrapper .header__nav__list {
+    display: flex;
+    list-style: none; }
+    .header .header__wrapper .header__nav__list .header__nav__list__item {
+      margin-left: 1rem; }
+
+/*# sourceMappingURL=header.css.map */

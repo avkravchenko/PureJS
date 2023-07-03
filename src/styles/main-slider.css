@@ -1,35 +1,43 @@
-main {
-  overflow: hidden;
-  margin-top: 9vh; }
-  main .main__slider {
-    flex: 1;
-    max-width: 1120px;
-    min-width: 300px;
-    position: relative; }
-    main .main__slider .main__slider__images {
+main .main__slider {
+  flex: 1;
+  max-width: 1120px;
+  min-width: 300px;
+  position: relative; }
+  main .main__slider .main__slider__images {
+    display: block; }
+    main .main__slider .main__slider__images .main__slider__image {
+      display: none;
+      width: 100%;
+      height: auto; }
+    main .main__slider .main__slider__images .main__slider__image--active {
       display: block; }
-      main .main__slider .main__slider__images .main__slider__image {
-        display: none;
+  main .main__slider .main__slider__dots {
+    height: 500px;
+    top: 1rem;
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    left: 1rem;
+    /*             .main__slider__dot--active {
+    
+                } */ }
+    main .main__slider .main__slider__dots .main__slider__dot {
+      height: 91px;
+      width: 70px; }
+      main .main__slider .main__slider__dots .main__slider__dot img {
         width: 100%;
         height: auto; }
-      main .main__slider .main__slider__images .main__slider__image--active {
-        display: block; }
-    main .main__slider .main__slider__dots {
-      height: 500px;
-      top: 1rem;
-      position: absolute;
-      flex-direction: column;
-      display: flex;
-      justify-content: space-between;
-      left: 1rem;
-      /*             .main__slider__dot--active {
-      
-                  } */ }
-      main .main__slider .main__slider__dots .main__slider__dot {
-        height: 91px;
-        width: 70px; }
-        main .main__slider .main__slider__dots .main__slider__dot img {
-          width: 100%;
-          height: auto; }
+
+@media screen and (max-width: 410px) {
+  .main .main__slider .main__slider__dots {
+    transform: scale(0.8);
+    max-height: 500px;
+    top: -30px;
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    left: .5rem; } }
 
 /*# sourceMappingURL=main-slider.css.map */

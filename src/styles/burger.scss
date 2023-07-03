@@ -1,0 +1,49 @@
+/* height: 300px;
+right: 0;
+z-index: 1;
+background-color: #fff;
+left: 0;
+position: absolute;
+top: 0; */
+
+.burger-open {
+    display: none;
+}
+
+.burger-background {
+    display: none;
+    .burger-menu {
+        display: none;
+        flex-direction: column;
+        gap: 2rem;
+        list-style: none;
+    }
+}
+
+.burger-background-active {
+    display: block;
+    padding: 1.5rem;
+    right: 0;
+    z-index: 1;
+    background-color: #fff;
+    left: 0;
+    position: absolute;
+    top: 0;
+
+    .burger-close {
+        text-align: end;
+    }
+
+    .burger-menu-active {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        list-style: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .burger-open {
+        display: inline-block;
+    }
+}

@@ -10,13 +10,33 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/burger.js":
+/*!***********************!*\
+  !*** ./src/burger.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"burger\": () => (/* binding */ burger)\n/* harmony export */ });\nconst burger = () => {\n    const openBurger = document.querySelector('.burger-open');\n    const closeBurger = document.querySelector('.burger-close');\n    const burgerBack = document.querySelector('.burger-background');\n    const burgerMenu = document.querySelector('.burger-menu');\n\n    openBurger.addEventListener('click', () => {\n        burgerBack.classList.add('burger-background-active');\n        burgerMenu.classList.add('burger-menu-active');\n    })\n\n    closeBurger.addEventListener('click', () => {\n        burgerBack.classList.remove('burger-background-active');\n        burgerMenu.classList.remove('burger-menu-active');\n    })\n}\n\n//# sourceURL=webpack://purejs/./src/burger.js?");
+
+/***/ }),
+
+/***/ "./src/countItems.js":
+/*!***************************!*\
+  !*** ./src/countItems.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"countItems\": () => (/* binding */ countItems)\n/* harmony export */ });\nconst countItems = () => {\n    const number = document.querySelector('.main__info__items-amount__number');\n    const increase = document.querySelector('.main__info__items-amount__increase');\n    const decrease = document.querySelector('.main__info__items-amount__decrease');\n    const sticker = document.querySelector('.header__nav__list__item__bag__count');\n\n    let currentValue = +number.innerHTML;\n    \n    increase.addEventListener('click', () => {\n        number.innerText = ++currentValue;\n        sticker.innerHTML = currentValue;\n    })\n\n    decrease.addEventListener('click', () => {\n        if (currentValue !== 0) {\n            number.innerText = --currentValue;\n            sticker.innerHTML = currentValue;\n        } \n\n        if (currentValue === 0) {\n            sticker.innerHTML = '';\n        }\n    })\n}\n\n//# sourceURL=webpack://purejs/./src/countItems.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _popUpClose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./popUpClose */ \"./src/popUpClose.js\");\n/* harmony import */ var _popUpOpen__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./popUpOpen */ \"./src/popUpOpen.js\");\n/* harmony import */ var _slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./slider */ \"./src/slider.js\");\n\n\n\n\n(0,_slider__WEBPACK_IMPORTED_MODULE_2__.mySlider)()\n;(0,_popUpOpen__WEBPACK_IMPORTED_MODULE_1__.popUpOpen)()\n;(0,_popUpClose__WEBPACK_IMPORTED_MODULE_0__.popUpClose)()\n\n//# sourceURL=webpack://purejs/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _burger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./burger */ \"./src/burger.js\");\n/* harmony import */ var _countItems__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./countItems */ \"./src/countItems.js\");\n/* harmony import */ var _popUpClose__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./popUpClose */ \"./src/popUpClose.js\");\n/* harmony import */ var _popUpOpen__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./popUpOpen */ \"./src/popUpOpen.js\");\n/* harmony import */ var _slider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./slider */ \"./src/slider.js\");\n\n\n\n\n\n\n(0,_slider__WEBPACK_IMPORTED_MODULE_4__.mySlider)()\n;(0,_popUpOpen__WEBPACK_IMPORTED_MODULE_3__.popUpOpen)()\n;(0,_popUpClose__WEBPACK_IMPORTED_MODULE_2__.popUpClose)()\n;(0,_countItems__WEBPACK_IMPORTED_MODULE_1__.countItems)()\n;(0,_burger__WEBPACK_IMPORTED_MODULE_0__.burger)()\n\n//# sourceURL=webpack://purejs/./src/index.js?");
 
 /***/ }),
 
