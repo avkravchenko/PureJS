@@ -57,6 +57,10 @@ main .main__slider {
     display: flex;
     justify-content: space-between;
     left: .5rem; } }
+@media screen and (max-width: 330px) {
+  .main .main__slider .main__slider__dots {
+    transform: scale(0.5);
+    top: -100px; } }
 .main {
   overflow: hidden;
   margin-top: 2vh;

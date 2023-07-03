@@ -64,3 +64,15 @@ main {
     }
    
 }
+
+@media screen and (max-width: 330px) {
+    .main {
+        .main__slider {
+            .main__slider__dots {
+                transform: scale(.5);
+                top: -100px;
+            }
+        }
+    }
+   
+}
